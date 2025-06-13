@@ -8,9 +8,9 @@ import lombok.Builder;
 public class SituacaoCliente {
 	
 	private DadosClienteDTO cliente;
-	private List<CartaoCliente> cartoes;
+	private List<CartaoClienteDTO> cartoes;
 	
-	public SituacaoCliente(DadosClienteDTO cliente, List<CartaoCliente> cartoes) {
+	public SituacaoCliente(DadosClienteDTO cliente, List<CartaoClienteDTO> cartoes) {
 		this.cliente = cliente;
 		this.cartoes = cartoes;
 	}
@@ -27,11 +27,11 @@ public class SituacaoCliente {
 		this.cliente = cliente;
 	}
 
-	public List<CartaoCliente> getCartoes() {
+	public List<CartaoClienteDTO> getCartoes() {
 		return cartoes;
 	}
 
-	public void setCartoes(List<CartaoCliente> cartoes) {
+	public void setCartoes(List<CartaoClienteDTO> cartoes) {
 		this.cartoes = cartoes;
 	}
 

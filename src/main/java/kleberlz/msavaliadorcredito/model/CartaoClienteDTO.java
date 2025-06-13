@@ -2,13 +2,13 @@ package kleberlz.msavaliadorcredito.model;
 
 import java.math.BigDecimal;
 
-public class CartaoCliente {
+public class CartaoClienteDTO {
 	
 	private String nome;
 	private String bandeira;
 	private BigDecimal limite;
 	
-	public CartaoCliente(String nome, String bandeira, BigDecimal limite) {
+	public CartaoClienteDTO(String nome, String bandeira, BigDecimal limite) {
 		this.nome = nome;
 		this.bandeira = bandeira;
 		this.limite = limite;
@@ -40,10 +40,9 @@ public class CartaoCliente {
 
 	@Override
 	public String toString() {
-		return "CartaoCliente [nome=" + nome + ", bandeira=" + bandeira + ", limite=" + limite + "]";
+		return "CartaoClienteDTO [nome=" + nome + ", bandeira=" + bandeira + ", limite=" + limite + "]";
 	}
-	
-	
-	
+
+
 
 }
