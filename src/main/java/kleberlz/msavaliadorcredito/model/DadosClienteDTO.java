@@ -4,10 +4,12 @@ public class DadosClienteDTO {
 	
 	private Long id;
 	private String nome;
+	private Integer idade;
 	
-	public DadosClienteDTO(Long id, String nome) {
+	public DadosClienteDTO(Long id, String nome, Integer idade) {
 		this.id = id;
 		this.nome = nome;
+		this.idade = idade;
 	}
 
 	public Long getId() {
@@ -26,11 +28,19 @@ public class DadosClienteDTO {
 		this.nome = nome;
 	}
 
+	public Integer getIdade() {
+		return idade;
+	}
+
+	public void setIdade(Integer idade) {
+		this.idade = idade;
+	}
+
 	@Override
 	public String toString() {
-		return "DadosCliente [id=" + id + ", nome=" + nome + "]";
+		return "DadosClienteDTO [id=" + id + ", nome=" + nome + ", idade=" + idade + "]";
 	}
-	
+
 	
 
 }
