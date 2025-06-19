@@ -4,8 +4,8 @@ spring:
   rabbitmq:
     host: localhost
     port: 5672
-    username: 
-    password: 
+    username: ${RABBIT_USERNAME}
+    password: ${RABBIT_PASSWORD}
 
 server:
   port: 0
@@ -13,10 +13,20 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8762/eureka
+      defaultZone: http://kleberlzms-eureka-user:erlseeakrer-sbzluk-ume@localhost:8762/eureka
   instance:
     instance-id: ${spring.application.name}:${random.value}
 
 mq:
   queues:
     emissao-cartoes: emissao-cartoes
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*' # Expondo os endpoints pro Actuator (Somente os MicroServiços)
+
+logging:
+  file:
+    name: ./logs/log-file.log # Acessar o LOG no browser através do Actuator
