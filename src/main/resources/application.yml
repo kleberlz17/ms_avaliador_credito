@@ -13,7 +13,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://kleberlzms-eureka-user:erlseeakrer-sbzluk-ume@localhost:8762/eureka
+      defaultZone: http://kleberlzms-eureka-user:erlseeakrer-sbzluk-ume@kleberlzms-eureka:8762/eureka
   instance:
     instance-id: ${spring.application.name}:${random.value}
 
