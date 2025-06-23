@@ -1,13 +1,11 @@
 spring:
   application:
     name: msavaliadorcredito
-profiles:
-  active: local #Pra utilizar o application-local.
   rabbitmq:
-    host: ${RABBITMQ_SERVER}
+    host: localhost
     port: 5672
-    username: ${RABBIT_USERNAME}
-    password: ${RABBIT_PASSWORD}
+    username: ## name salvo no eclipse
+    password: ## senha salva no eclipse
 
 server:
   port: 0
@@ -15,7 +13,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://kleberlzms-eureka-user:erlseeakrer-sbzluk-ume@${EUREKA_SERVER}:8762/eureka
+      defaultZone: http://kleberlzms-eureka-user:erlseeakrer-sbzluk-ume@localhost:8762/eureka
   instance:
     instance-id: ${spring.application.name}:${random.value}
 
