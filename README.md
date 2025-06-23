@@ -44,9 +44,6 @@ As imagens dockerizadas dos serviços estão disponíveis no meu Docker Hub:
 ✔️ Não inclui imagens Docker para **RabbitMQ** e **Keycloak** no repositório, mas os serviços foram configurados e integrados localmente no ambiente.
 
 ---
-
-## 🎯 Próximos Passos (opcional)
-
 - Avaliar dockerização de **Keycloak** e **RabbitMQ** em um ambiente separado.
 - Criar arquivos `docker-compose.yml` para facilitar o up do ecossistema completo.
 - Melhorias nas configurações de segurança e comunicação entre os serviços.
